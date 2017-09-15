@@ -1,0 +1,14 @@
+{
+  "name": "stgo-hackday-cypress",
+  "version": "0.0.1",
+  "description": "Cypress.io tests for Saxo Trader GO",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open"
+  },
+  "author": "jakubsadura",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^0.20.0"
+  }
+}
