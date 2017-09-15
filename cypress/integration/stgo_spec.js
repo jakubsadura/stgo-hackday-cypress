@@ -1,5 +1,11 @@
 describe('My First Test', function() {
-    it('Does not do much!', function() {
-      expect(true).to.equal(true)
-    })
+  it('Visits the STGO test env and search for master branch build', function() {
+    cy.visit('https://ba.orange.saxobank.com/')
+      .url()
+        .should('include', '/bundles')
+      .get('input[type="search"]')
+        .click()
+        .type('master')        
+      .get('tbody tr:first-child a')
   })
+})
